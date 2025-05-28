@@ -1,4 +1,8 @@
 module.exports = function(eleventyConfig) {
+  // Copy static assets like PDF, images, etc.
+  eleventyConfig.addPassthroughCopy("assets");
+
+  // Collect markdown posts
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("./posts/*.md");
   });
