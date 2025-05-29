@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>`
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ariel Werle | Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg,rgb(96, 59, 246),rgb(157, 40, 110));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 1.5rem;
+            top: 3.5rem;
+            height: calc(100% - 3.5rem);
+            width: 2px;
+            background: #e5e7eb;
+        }
+        
+        .skill-pill:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color:rgb(96, 59, 246);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active-nav::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold gradient-text">Dr. Ariel Werle</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#cv" class="nav-link">My Story</a>
+                <a href="/#publications" class="nav-link">Publications</a>
+                
+            </div>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+  <main style="padding-top: 80px;">
+    
+<section id="home" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="gradient-text">Ariel Werle</span></h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Data Scientist & Researcher</h2>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Data scientist with a background in astrophysics research and a terrible lack of talent for self advertisement.
+            </p>            
+            <div class="flex space-x-4">
+                        <a href="assets/CV.pdf" class="bg-purple-900 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Here's my CV
+                        </a>
+
+                        <a href="https://github.com/arielwrl/personal-website" class="bg-pink-900 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Steal this website!
+                        </a>                        
+            </div>
+
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full absolute -z-10 blur-xl opacity-20"></div>
+                <img src="/assets/pic.png" 
+                        alt="Ariel Werle" 
+                        class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white shadow-lg">
+            </div>    
+        </div>
+
+    </div>
+</section>
+
+<section id="cv" class="py-20 bg-white px-6" style="background-color: rgb(255,255,255);">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4" style="color: rgb(0,0,0);">My story</h2>
+
+        <div class="w-20 h-1 mx-auto mb-12" style="background: linear-gradient(90deg, rgb(96, 59, 246), rgb(157, 40, 110));"></div>
+        
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <h3 class="text-xl font-semibold mb-4" style="color: rgb(0,0,0);">Academic Background</h3>
+                <div class="space-y-8 relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: rgb(219, 234, 254);">
+                            <i class="fas fa-graduation-cap" style="color: rgb(96, 59, 246);"></i>
+                        </div>
+                        <h4 class="font-bold text-lg" style="color: rgb(0,0,0);">PhD. in Astrophysics</h4>
+                        <p class="font-medium" style="color: rgb(96, 59, 246);">Universidade Federal de Santa Catarina</p>
+                        <p class="text-gray-500" style="color: rgb(107, 114, 128);">2015 - 2019</p>
+                        <p class="mt-2 text-gray-600" style="color: rgb(75, 85, 99);">
+                            Thesis: 
+                            <a href="https://repositorio.ufsc.br/bitstream/handle/123456789/211673/PFSC0363-T.pdf?sequence=-1&isAllowed=y" class="mt-2 text-grat-600 hover:text-gray-800">
+                            Analysis of SDSS Spectra and GALEX Photometry with STARLIGHT: Stellar Populations and Dust in Local Galaxies
+                            </a>
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: rgb(219, 234, 254);">
+                            <i class="fas fa-university" style="color: rgb(96, 59, 246);"></i>
+                        </div>
+                        <h4 class="font-bold text-lg" style="color: rgb(0,0,0);">MSc. in Astrophysics</h4>
+                        <p class="font-medium" style="color: rgb(96, 59, 246);">Universidade Federal de Santa Catarina</p>
+                        <p class="text-gray-500" style="color: rgb(107, 114, 128);">2012 - 2014</p>
+                        <p class="mt-2 text-gray-600" style="color: rgb(75, 85, 99);">
+                            Thesis: Post-starburst Galaxies in the Local Universe
+                        </p>
+                    </div>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: rgb(219, 234, 254);">
+                            <i class="fas fa-book" style="color: rgb(96, 59, 246);"></i>
+                        </div>
+                        <h4 class="font-bold text-lg" style="color: rgb(0,0,0);">Lic. in Physics</h4>
+                        <p class="font-medium" style="color: rgb(96, 59, 246);">Universidade Federal de Santa Catarina</p>
+                        <p class="text-gray-500" style="color: rgb(107, 114, 128);">2007 - 2011</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2">
+                <h3 class="text-xl font-semibold mb-4" style="color: rgb(0,0,0);">My Toolbox</h3>
+                <div class="mb-8">
+                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Programming And Scripting</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">Python</span>
+                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">R</span>
+                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">SQL</span>
+                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">JavaScript</span>
+                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">HTML</span>
+                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">LaTex</span>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Machine Learning</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Scikit-learn</span>
+                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">TensorFlow</span>
+                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">XGBoost</span>
+                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Keras</span>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Data Analysis</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill" style="background-color: rgb(237, 233, 254); color: rgb(91, 33, 182); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Pandas</span>
+                        <span class="skill-pill" style="background-color: rgb(237, 233, 254); color: rgb(91, 33, 182); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">NumPy</span>
+                        <span class="skill-pill" style="background-color: rgb(237, 233, 254); color: rgb(91, 33, 182); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Spark</span>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Visualization</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Matplotlib</span>
+                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Seaborn</span>
+                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Plotly</span>
+                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Superset</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="publications" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">Selected Publications</h2>
+        <div class="w-20 h-1 mx-auto mb-12" style="background: linear-gradient(90deg, rgb(96, 59, 246), rgb(157, 40, 110));"></div>
+        
+        <div class="space-y-6">
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">The history of star-forming regions in the tails of six GASP jellyfish galaxies observed with the Hubble Space Telescope</h3>
+                        <p class="text-gray-600 mb-2">Astronomy & Astrophysics, 2024</p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Werle A.</span>, Giunchi E., Poggianti B., et al.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 flex space-x-3">
+                        <a href="https://www.aanda.org/articles/aa/pdf/2024/02/aa48055-23.pdf" class="bg-blue-50 hover:bg-blue-100 text-blue-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i> PDF
+                        </a>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...682A.162W/exportcitation" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-quote-right mr-2"></i> Cite
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Post-starburst Galaxies in the Centers of Intermediate-redshift Clusters</h3>
+                        <p class="text-gray-600 mb-2">The Astrophysical Journal, 2022</p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Werle A.</span>, Poggianti B., Moretti A., et al.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 flex space-x-3">
+                        <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac5f06/pdf" class="bg-blue-50 hover:bg-blue-100 text-blue-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i> PDF
+                        </a>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...930...43W/exportcitation" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-quote-right mr-2"></i> Cite
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Publication 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Clues on the history of early-type galaxies from SDSS spectra and GALEX photometry</h3>
+                        <p class="text-gray-600 mb-2">Monthly Notices of the Royal Astronomical Society, 2020</p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Werle, A.</span>, Cid Fernandes, R., Vale Asari N., et al.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 flex space-x-3">
+                        <a href="https://watermark.silverchair.com/staa2217.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA1MwggNPBgkqhkiG9w0BBwagggNAMIIDPAIBADCCAzUGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMloMqiXlUlNOMmOc0AgEQgIIDBnndoeaIk-jUOLBkjMY7ksK9JZ7oFBKbrc4J77gf3ggmaRCp3RrSbwDwASRjA_BvJ5wjc_VW-fpNzCPdPfKZbw9gzglPjz1oVblIOKlSNjjHyw44rkcvR2c5-wGvs1ZKLzc4e2ycSL70aWXMNjXMZG80T5UmV1udU6-Q0gOdVXGIhXxY4szweF9ncZDtorOFSl0qf3hpa5rQmOrQtPgzyWT1HIy5MNfDS19gXFUFXWrIP6XGhz38yFYMyIKUiKBlR6kmnFE8bgJHa079Tymz0vKzrxPvb1AiUa1He9_oQ5jLYEHjViYAGrrWijxoEzRC-Ouit-JUR7AYVZSWHvM1H7CIi28h8Y9DV34Ni8OgkQoU8UgNRhPIDVAYoe2c9S4L9aSVGEjS7KDDvzeyV5atKFvQCq6Jj5Gp2zz7u8OxG6SFRW9bSLygxh7gw6G6KuKjjyM2YGZLEwSHju39dDE24FQMn_5SeABSZXHcp2Pfl-EgM1IhIe0ZYabSYGS28MVqqJkWp8QIsv_yTxPSOR1PeBfaMCxR1Ta5j_-m8aI8dqpco8AS3MdGEj0oDM28WYG7-S5GlHFF6qs4DeIEZb14OwoXStiOFph0WOQrOOfDReGzIpJyJFv3M1itdpLrwgbo0ZA_xsJd9f84x_AyPEBMTkDHnJPkRO8uG3V7o4FneUkUcIwJqrMA8lTtUJfkP1hvznU_N1VNBnE0Pxb1GZwtrIWrcu8yXgRgRy2PQVWnUzBnaU8xjlrjLjKLO0_fLG94yaA7Qe3j5d17x-uZ98XMilVIF3JhfzFstbpZNcg1rJWkLEfwN_6vBTSBCinigp7WWvMqB4OqBchcKsXe-3bfZGArIwzpo_589R8dduuWr5Es17Ir5qnn-4_AddIKaDixKi16Ti3yPTdATcalM7ARqDTirkfENX_KhdQUvJl2nJWXuAcnV_O_Qe3_1jeh0kyGfYhZUbuRdyD9ybwi-rtPNwYrt7L7DUbECzc30e4e53fGY5ISPX7DSCpWRdTflFV32Z232mDYBA" class="bg-blue-50 hover:bg-blue-100 text-blue-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i> PDF
+                        </a>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.3251W/exportcitation" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-quote-right mr-2"></i> Cite
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Publication 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Simultaneous analysis of SDSS spectra and GALEX photometry with STARLIGHT: method and early results</h3>
+                        <p class="text-gray-600 mb-2">Monthly Notices of the Royal Astronomical Society, 2019</p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Werle A.</span>, Cid Fernandes, R., Vale Asari, N., et al.
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0 flex space-x-3">
+                        <a href="https://watermark.silverchair.com/sty3264.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA1EwggNNBgkqhkiG9w0BBwagggM-MIIDOgIBADCCAzMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMtAJ3J_3YMyuIatr_AgEQgIIDBG4LFPSzmqiCMIecZ2Oq6gVFigcVc41Zm62kJ1d24USANMa92dqkph3O4Ee3c9G3MthoWHATA34tduIqoJWnlNyYBIeW5918bSUGr60o7HSDgqkTGr_tnAFFaksMXGnLEuU2bU-gF4CxMigWVTBLdU48-vIKYjnaqjy-dzDSYS_2NjXvKk-f8c-xK_yzR2yW7BDQOjonENxU1zgvdCfR4lkJZvDXim4-zH23bAX9olAqv4dywok51SI4LIOSKS5Almp9uQn3y85JkebNz9YH6QrmPN9DS3vmlawdx8n8T11hnaRqVMcYKU-tq3n01Ve0MMGyu0ejccucApWBY54zQNiBbbBbtWkhHbMnhHTR6y2NLKKVcHvQJuUFx68HGkGVREPCBh8hJgB8aZU6E-o_YkeI3TBcnXNt2ciUEsbGC5dV2spInLU1Ea6q7vUvUBOhirqaTZdy5b4CTcqw9awH4ufBBn945bbP0WzrGI7LiBijb0zuOSgH4_OhAx-NrBICo6A-JBeJtFzf5O3PRg6AffuhuPJBMpUCkxK1oOWfbc97CImyI6p0di8Q8in-YXB144FKRAgktnUgQ9RNs5HqLqjZI_HjcfcWyP5Ond-jK8Yv6mJNgz1YKDplx2fmWOzYph-C5un_4hUyUTZNaMSxmCMVCd7VCmdfsGcwcnzHSs7B9DagGioRv1Mo9_BFgqXNeQ9uz_F6b5FpIab722xebS_fImJXH_VwCRtTIhB3RJ5lN5wr_Kp4Koy23fJk9jYKPBF7BI6wWan-XM2NitsMvQ0LcVkLIhJYDJ1Y3qcX4YqxABf2qztwDz-f9El7icFewmxcre6-7V9T5did-tZy3LW0OBa__F7ovAplb5O8pvZPrcAshyCSJr3JT3iYtr0ap0RlGQzE9wGKjnaG0NBgffexU5HOlXHlsoVNta7Gvuw4bM2AaG5-0qry6JMB6VZyGzk3q9sliyY3xoodC2SLYnsVzpBiccLNjGDcNNnX3OWrz3WGcczNFGje5CA2qvU5DFPRmc0" class="bg-blue-50 hover:bg-blue-100 text-blue-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-file-pdf mr-2"></i> PDF
+                        </a>
+                        <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.483.2382W/exportcitation" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-quote-right mr-2"></i> Cite
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22werle%2C%20ariel%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                See full list in NASA ADS!
+                <!-- <i class="fas fa-arrow-right ml-2"></i> -->
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="text-2xl font-bold gradient-text">Dr. Ariel Werle</a>
+                <p class="text-gray-400 mt-2">Data Scientist & Researcher</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/in/ariel-werle" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/arielwrl" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=IXxSGHoAAAAJ&hl=en&oi=ao" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                &copy; 2025 Ariel Werle. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+  </main>
+
+</body>
+</html>
