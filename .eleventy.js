@@ -1,3 +1,5 @@
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
 module.exports = function(eleventyConfig) {
   // Copy static assets like PDF, images, etc.
   eleventyConfig.addPassthroughCopy("assets");
