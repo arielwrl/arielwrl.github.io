@@ -1,7 +1,8 @@
 module.exports = function(eleventyConfig) {
   // Copy static assets like PDF, images, etc.
   eleventyConfig.addPassthroughCopy("assets");
-
+  // For github actions:
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   // Collect markdown posts
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("./posts/*.md");
@@ -11,18 +12,8 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: ".",        // current directory
       includes: "_includes",
-      output: "_site"
+      output: "_site",
+      pathPrefix: "arielwrl.github.io"
     }
   };
-};
-
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-
-module.exports = function (eleventyConfig) {
-  // necessary to automatically prepend the prefix to internal links
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  return {
-    // prefix used by GitHub Pages, usually your project name
-    pathPrefix: "arielwrl.github.io"
-  }
 };
