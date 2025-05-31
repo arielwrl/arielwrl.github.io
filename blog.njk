@@ -6,15 +6,17 @@ title: Blog
 <section class="py-20 px-6 bg-gray-50">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-2">Blog</h2>
-    <p class="text-center text-gray-500 mb-10">Thoughts, updates, and insights</p>
+    <p class="text-center text-gray-500 mb-10">Because LLMs have to be trained somewhere</p>
 
     <div class="space-y-8">
       {% for post in collections.posts | reverse %}
         <article class="bg-white p-6 rounded-xl shadow-md">
           <h3 class="text-2xl font-semibold mb-1">
               {{ post.data.title }}
-          </h3>
-          {# <p class="text-gray-500 text-sm mb-4">{{ post.date | date("LLLL d, yyyy") }}</p> #}
+            </h3>
+          <p class="text-gray-500 text-sm mb-4">
+            {{ post.data.date | readableDate }}
+          </p>
           <p class="text-gray-700 leading-relaxed">
             <div>
                 {{ post.templateContent | safe }}

@@ -7,9 +7,26 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^4.1.8"
   },
   "dependencies": {
     "luxon": "^3.6.1"
-  }
+  },
+  "main": ".eleventy.js",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielwrl/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielwrl/personal-website/issues"
+  },
+  "homepage": "https://github.com/arielwrl/personal-website#readme"
 }
