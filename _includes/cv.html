@@ -1,96 +1,70 @@
-<section id="cv" class="py-20 bg-white px-6" style="background-color: rgb(255,255,255);">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-4" style="color: rgb(0,0,0);">My story</h2>
-
-        <div class="w-20 h-1 mx-auto mb-12" style="background: linear-gradient(90deg, rgb(96, 59, 246), rgb(157, 40, 110));"></div>
-        
-        <div class="flex flex-col md:flex-row gap-12">
-            <div class="md:w-1/2">
-                <h3 class="text-xl font-semibold mb-4" style="color: rgb(0,0,0);">Academic Background</h3>
-                <div class="space-y-8 relative">
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-item relative pl-12">
-                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: rgb(219, 234, 254);">
-                            <i class="fas fa-graduation-cap" style="color: rgb(96, 59, 246);"></i>
-                        </div>
-                        <h4 class="font-bold text-lg" style="color: rgb(0,0,0);">PhD. in Astrophysics</h4>
-                        <p class="font-medium" style="color: rgb(96, 59, 246);">Universidade Federal de Santa Catarina</p>
-                        <p class="text-gray-500" style="color: rgb(107, 114, 128);">2015 - 2019</p>
-                        <p class="mt-2 text-gray-600" style="color: rgb(75, 85, 99);">
-                            Thesis: 
-                            <a href="https://repositorio.ufsc.br/bitstream/handle/123456789/211673/PFSC0363-T.pdf?sequence=-1&isAllowed=y" class="mt-2 text-grat-600 hover:text-gray-800">
-                            Analysis of SDSS Spectra and GALEX Photometry with STARLIGHT: Stellar Populations and Dust in Local Galaxies
-                            </a>
-                        </p>
-                    </div>
-                    
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-item relative pl-12">
-                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: rgb(219, 234, 254);">
-                            <i class="fas fa-university" style="color: rgb(96, 59, 246);"></i>
-                        </div>
-                        <h4 class="font-bold text-lg" style="color: rgb(0,0,0);">MSc. in Astrophysics</h4>
-                        <p class="font-medium" style="color: rgb(96, 59, 246);">Universidade Federal de Santa Catarina</p>
-                        <p class="text-gray-500" style="color: rgb(107, 114, 128);">2012 - 2014</p>
-                        <p class="mt-2 text-gray-600" style="color: rgb(75, 85, 99);">
-                            Thesis: Post-starburst Galaxies in the Local Universe
-                        </p>
-                    </div>
-                    
-                    <!-- Timeline Item 3 -->
-                    <div class="timeline-item relative pl-12">
-                        <div class="absolute left-0 top-0 w-8 h-8 rounded-full flex items-center justify-center" style="background-color: rgb(219, 234, 254);">
-                            <i class="fas fa-book" style="color: rgb(96, 59, 246);"></i>
-                        </div>
-                        <h4 class="font-bold text-lg" style="color: rgb(0,0,0);">Lic. in Physics</h4>
-                        <p class="font-medium" style="color: rgb(96, 59, 246);">Universidade Federal de Santa Catarina</p>
-                        <p class="text-gray-500" style="color: rgb(107, 114, 128);">2007 - 2011</p>
-                    </div>
-                </div>
+<section id="cv" class="container">
+    <h2 style="text-align: center;">My story</h2>
+    <br>
+    <div class="grid">
+        <div>
+            <h3>Academic Background</h3>
+            <div>
+                <h4><i class="fas fa-graduation-cap"></i> PhD. in Astrophysics</h4>
+                <p>Universidade Federal de Santa Catarina</p>
+                <p>2015 - 2019</p>
+                <p>
+                    Thesis: 
+                    <a href="https://repositorio.ufsc.br/bitstream/handle/123456789/211673/PFSC0363-T.pdf?sequence=-1&isAllowed=y">
+                        Analysis of SDSS Spectra and GALEX Photometry with STARLIGHT: Stellar Populations and Dust in Local Galaxies
+                    </a>
+                </p>
             </div>
-            
-            <div class="md:w-1/2">
-                <h3 class="text-xl font-semibold mb-4" style="color: rgb(0,0,0);">My Toolbox</h3>
-                <div class="mb-8">
-                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Programming And Scripting</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">Python</span>
-                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">R</span>
-                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">SQL</span>
-                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">JavaScript</span>
-                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">HTML</span>
-                        <span class="skill-pill" style="background-color: rgb(219, 234, 254); color: rgb(96, 59, 246);">LaTex</span>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Machine Learning</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Scikit-learn</span>
-                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">TensorFlow</span>
-                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">XGBoost</span>
-                        <span class="skill-pill" style="background-color: rgb(209, 250, 229); color: rgb(6, 95, 70); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Keras</span>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Data Analysis</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-pill" style="background-color: rgb(237, 233, 254); color: rgb(91, 33, 182); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Pandas</span>
-                        <span class="skill-pill" style="background-color: rgb(237, 233, 254); color: rgb(91, 33, 182); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">NumPy</span>
-                        <span class="skill-pill" style="background-color: rgb(237, 233, 254); color: rgb(91, 33, 182); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Spark</span>
-                    </div>
-                </div>
-                
-                <div class="mb-8">
-                    <h4 class="font-medium mb-3" style="color: rgb(0,0,0);">Visualization</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Matplotlib</span>
-                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Seaborn</span>
-                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Plotly</span>
-                        <span class="skill-pill" style="background-color: rgb(254, 243, 199); color: rgb(146, 64, 14); padding: 0.5rem 1rem; border-radius: 9999px; transition: all 0.2s;">Superset</span>
-                    </div>
-                </div>
+
+            <div>
+                <h4><i class="fas fa-university"></i> MSc. in Astrophysics</h4>
+                <p>Universidade Federal de Santa Catarina</p>
+                <p>2012 - 2014</p>
+                <p>Thesis: Post-starburst Galaxies in the Local Universe</p>
+            </div>
+
+            <div>
+                <h4><i class="fas fa-book"></i> Lic. in Physics</h4>
+                <p>Universidade Federal de Santa Catarina</p>
+                <p>2007 - 2011</p>
+            </div>
+        </div>
+
+        <!-- Toolbox -->
+        <div class="toolbox">
+            <h3>My Toolbox</h3>
+
+            <h4>Programming And Scripting</h4>
+            <div class="skills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">R</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">LaTeX</span>
+            </div>
+
+            <h4>Machine Learning</h4>
+            <div class="skills">
+                <span class="skill-pill">Scikit-learn</span>
+                <span class="skill-pill">TensorFlow</span>
+                <span class="skill-pill">XGBoost</span>
+                <span class="skill-pill">Keras</span>
+            </div>
+
+            <h4>Data Analysis</h4>
+            <div class="skills">
+                <span class="skill-pill">Pandas</span>
+                <span class="skill-pill">NumPy</span>
+                <span class="skill-pill">Spark</span>
+            </div>
+
+            <h4>Visualization</h4>
+            <div class="skills">
+                <span class="skill-pill">Matplotlib</span>
+                <span class="skill-pill">Seaborn</span>
+                <span class="skill-pill">Plotly</span>
+                <span class="skill-pill">Superset</span>
             </div>
         </div>
     </div>

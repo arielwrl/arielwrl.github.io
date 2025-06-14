@@ -17,11 +17,9 @@ title: Blog
           <p class="text-gray-500 text-sm mb-4">
             {{ post.data.date | readableDate }}
           </p>
-          <p class="text-gray-700 leading-relaxed">
-            <div>
-                {{ post.templateContent | safe }}
-            </div>
-          </p>
+        <div class="markdown-body">
+          {{ post.templateContent | safe }}
+        </div>
         </article>
       {% endfor %}
     </div>

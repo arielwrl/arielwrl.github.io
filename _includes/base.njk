@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>`
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Ariel Werle | Data Scientist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> {# For footer icons #}
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> {# For icons #}
+    <link rel="stylesheet" href="/styles/style.css" />
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold gradient-text">Dr. Ariel Werle</a>
-            <div class="hidden md:flex space-x-8">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/#cv" class="nav-link">My Story</a>
-                <a href="/#publications" class="nav-link">Publications</a>
-                {# <a href="/blog" class="nav-link">Blog</a> #}
-            </div>
-            <button class="md:hidden text-gray-600">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
+<!-- Navigation bar -->
+<header class="container" style="position:sticky;top:0;z-index:1000;background: var(--pico-background-color);">
+    <nav>
+        <ul>
+            <li><strong><a href="/">Dr. Ariel Werle</a></strong></li>
+        </ul>
+        <ul>
+            <li><a href="/" class="secondary">Home</a></li>
+            <li><a href="/#cv" class="secondary">My Story</a></li>
+            <li><a href="/#publications" class="secondary">Publications</a></li>
+            {# <li><a href="/blog" class="secondary">Blog</a></li> #}
+        </ul>
     </nav>
+</header>
 
-  <main style="padding-top: 80px;">
-    {{ content | safe }}
-  </main>
+<!-- Main Content -->
+<main class="container">
+{{ content | safe }}
+</main>
 
 </body>
 </html>

@@ -1,13 +1,16 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const { DateTime } = require("luxon"); // This library allows custom date formating
+// const { syntaxHighlight } = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
   // Copy static assets like PDF, images, etc:
   eleventyConfig.addPassthroughCopy("assets");
   // Copy styles:
-  eleventyConfig.addPassthroughCopy("styles");
+  eleventyConfig.addPassthroughCopy("styles");  
   // For github actions:
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  // For syntax highlighting:
+  // eleventyConfig.addPlugin(syntaxHighlight);
   // To format dates in the blog:
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("GG DDDD");
@@ -18,6 +21,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       input: ".",
       includes: "_includes",
@@ -25,4 +29,5 @@ module.exports = function(eleventyConfig) {
       pathPrefix: "arielwrl.github.io"
     }
   };
+
 };
