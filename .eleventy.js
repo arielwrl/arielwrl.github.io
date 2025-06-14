@@ -1,6 +1,6 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const { DateTime } = require("luxon"); // This library allows custom date formating
-// const { syntaxHighlight } = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
   // Copy static assets like PDF, images, etc:
@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   // For github actions:
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   // For syntax highlighting:
-  // eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(syntaxHighlight);
   // To format dates in the blog:
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("GG DDDD");
