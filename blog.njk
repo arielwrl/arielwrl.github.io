@@ -3,21 +3,20 @@ layout: base.njk
 title: Blog
 ---
 
-<section class="py-20 px-6 bg-gray-50">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-2">Blog</h2>
-    <p class="text-center text-gray-500 mb-10">Because LLMs have to be trained somewhere</p>
-
-    <div class="space-y-8">
+<section>
+  <div>
+    <h2>Blog</h2>
+    <p>Because LLMs have to be trained somewhere</p>
+    <div>
       {% for post in collections.posts | reverse %}
-        <article class="bg-white p-6 rounded-xl shadow-md">
-          <h3 class="text-2xl font-semibold mb-1">
+        <article>
+          <h3>
               {{ post.data.title }}
             </h3>
-          <p class="text-gray-500 text-sm mb-4">
+          <p>
             {{ post.data.date | readableDate }}
           </p>
-        <div class="markdown-body">
+        <div>
           {{ post.templateContent | safe }}
         </div>
         </article>

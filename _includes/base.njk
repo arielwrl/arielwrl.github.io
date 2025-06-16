@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +13,30 @@
 
 <body>
 
-<!-- Navigation bar -->
-<header class="container" style="position:sticky;top:0;z-index:1000;background: var(--pico-background-color);">
-    <nav>
-        <ul>
-            <li><strong><a href="/">Dr. Ariel Werle</a></strong></li>
-        </ul>
-        <ul>
-            <li><a href="/" class="secondary">Home</a></li>
-            <li><a href="/#cv" class="secondary">My Story</a></li>
-            <li><a href="/#publications" class="secondary">Publications</a></li>
-            {# <li><a href="/blog" class="secondary">Blog</a></li> #}
-        </ul>
-    </nav>
-</header>
+    <!-- Navigation bar -->
+    <header class="container" style="position:sticky;top:0;z-index:1000;background: var(--pico-background-color);">
+        <nav>
+            <ul>
+                <li><strong><a href="/">Dr. Ariel Werle</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/" class="secondary">Home</a></li>
+                <li><a href="/#cv" class="secondary">My Story</a></li>
+                <li><a href="/#publications" class="secondary">Publications</a></li>
+                {# <li><a href="/blog" class="secondary">Blog</a></li> #}
+                <li><button id="theme-toggle" aria-label="Toggle theme" class="secondary theme-button">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Main Content -->
-<main class="container">
-{{ content | safe }}
-</main>
+    <!-- Main Content -->
+    <main class="container">
+    {{ content | safe }}
+    </main>
+
+    <!-- Theme toggle -->
+    <script src="/js/theme-toggle.js"></script>
 
 </body>
+
 </html>

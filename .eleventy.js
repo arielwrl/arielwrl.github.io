@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   // Copy styles:
   eleventyConfig.addPassthroughCopy("styles");  
+  // Custom scripts:
+  eleventyConfig.addPassthroughCopy("js");  
   // For github actions:
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   // For syntax highlighting:
