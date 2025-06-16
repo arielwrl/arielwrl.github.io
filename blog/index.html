@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,35 +13,39 @@
 
 <body>
 
-<!-- Navigation bar -->
-<header class="container" style="position:sticky;top:0;z-index:1000;background: var(--pico-background-color);">
-    <nav>
-        <ul>
-            <li><strong><a href="/">Dr. Ariel Werle</a></strong></li>
-        </ul>
-        <ul>
-            <li><a href="/" class="secondary">Home</a></li>
-            <li><a href="/#cv" class="secondary">My Story</a></li>
-            <li><a href="/#publications" class="secondary">Publications</a></li>
-            
-        </ul>
-    </nav>
-</header>
+    <!-- Navigation bar -->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong><a href="/">Dr. Ariel Werle</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/" class="secondary">Home</a></li>
+                <li><a href="/#cv" class="secondary">My Story</a></li>
+                <li><a href="/#publications" class="secondary">Publications</a></li>
+                
+                <li><button id="theme-toggle" aria-label="Toggle theme" class="secondary theme-button">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Main Content -->
-<main class="container">
-
-<section class="py-20 px-6 bg-gray-50">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-2">Blog</h2>
-    <p class="text-center text-gray-500 mb-10">Because LLMs have to be trained somewhere</p>
-
-    <div class="space-y-8">
+    <!-- Main Content -->
+    <main class="container">
+    
+<section>
+  <div>
+    <h2>Blog</h2>
+    <p>Because LLMs have to be trained somewhere</p>
+    <div>
       
     </div>
   </div>
 </section>
-</main>
+    </main>
+
+    <!-- Theme toggle -->
+    <script src="/js/theme-toggle.js"></script>
 
 </body>
+
 </html>
