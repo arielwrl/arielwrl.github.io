@@ -1,6 +1,6 @@
 const toggleBtn = document.getElementById("toggle-chatbot-btn");
 const chatbotContainer = document.getElementById("chatbot-container");
-const defaultText = "Chat with an evil AI running in your browser.";
+const defaultText = "Chat with an evil AI running in your browser";
 const hideText = "Hide chatbot, it is too evil!";
 
 toggleBtn.addEventListener("click", function() {
