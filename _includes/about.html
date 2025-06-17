@@ -12,7 +12,17 @@
 
         <a href="/assets/CV.pdf" class="contrast" role="button">Here's my CV</a>
         <a href="https://github.com/arielwrl/personal-website" class="secondary" role="button">Steal this website!</a>
-                
+        
+        <div id="chatbot-container" class="hidden">
+                <h1>Evil chatbot</h1>
+                <p>This chatbot was made with WebLLM and LLaMA 3.1; the evil part I added myself. The model will run locally for you! Performance might be very slow, but it is free!</p>
+                <div id="chat-box">Loading model...</div>
+                <input id="chat-input" type="text" style="width:80%" placeholder="Ask me something, mortal." />
+                <button id="send-btn">Send</button>
+        </div>
+
+        <button id="toggle-chatbot-btn" class="primary" style="margin-top: 1rem;">Chat with an evil AI running in your browser</button>
+
     </div>
     <div style="text-align: center;">
         <img src="/assets/pic.png" alt="Profile photo" class="profile-img">
