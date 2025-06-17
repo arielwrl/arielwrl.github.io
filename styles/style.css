@@ -35,3 +35,11 @@ header.container {
 html {
   scroll-padding-top: 4rem; /* padding to match navigation bar */
 }
+
+#chatbot-container {
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.hidden {
+    display: none;
+}
