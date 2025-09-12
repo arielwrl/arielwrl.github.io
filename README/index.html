@@ -41,6 +41,10 @@
 <p>To get a local copy up and running, follow these simple steps.</p>
 <h3>Prerequisites</h3>
 <p>You need to have <a href="https://nodejs.org/">Node.js</a> and npm installed on your machine.</p>
+<h3>Running locally</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> eleventy
+
+npx eleventy <span class="token parameter variable">--serve</span></code></pre>
 <h2>Deployment</h2>
 <p>The website is automatically deployed to GitHub Pages whenever changes are pushed to the <code>main</code> branch. The workflow is defined in <code>.github/workflows/deploy-pages.yml</code>.</p>
 <p><a href="https://www.dawidsblog.com/posts/tutorial_11ty_github_pages/">This very nice post</a> explains how to deploy 11ty projects to GitHub pages.</p>
