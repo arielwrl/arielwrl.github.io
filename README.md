@@ -51,6 +51,14 @@ To get a local copy up and running, follow these simple steps.
 
 You need to have [Node.js](https://nodejs.org/) and npm installed on your machine.
 
+### Running locally
+
+```bash
+npm install eleventy
+
+npx eleventy --serve
+```
+
 ## Deployment
 
 The website is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch. The workflow is defined in `.github/workflows/deploy-pages.yml`.
