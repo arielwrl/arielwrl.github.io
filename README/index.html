@@ -1,2 +1,46 @@
+<h1>Personal Website</h1>
 <p><a href="https://www.11ty.dev"><img src="https://img.shields.io/badge/Built%20with-Eleventy-1D4D4F?logo=eleventy&amp;logoColor=white&amp;style=for-the-badge" alt="Built with Eleventy"></a></p>
+<h3>Project Structure</h3>
+<p>The main directories are:</p>
+<ul>
+<li><code>_includes</code>: Nunjucks templates for the base layout, header, and footer.</li>
+<li><code>_site</code>: The output directory for the generated site.</li>
+<li><code>assets</code>: Static assets.</li>
+<li><code>posts</code>: Blog posts in Markdown.</li>
+<li><code>styles</code>: CSS stylesheets.</li>
+<li><code>js</code>: Java script code for interactivity and experimental chatbot.</li>
+</ul>
+<h3>Directory Tree</h3>
+<pre><code>.
+├── README.md
+├── _includes
+│   ├── about.html
+│   ├── base.njk
+│   ├── cv.html
+│   ├── footer.html
+│   └── publications.html
+├── assets
+│   ├── CV.pdf
+│   ├── icon.ico
+│   └── pic.png
+├── blog.njk
+├── index.njk
+├── js
+│   ├── chat-toggle.js
+│   ├── llamachatbot.js
+│   └── theme-toggle.js
+├── package-lock.json
+├── package.json
+├── posts
+│   ├── hello.md
+│   └── ...
+└── styles
+    └── style.css
+</code></pre>
+<h2>Getting Started</h2>
+<p>To get a local copy up and running, follow these simple steps.</p>
+<h3>Prerequisites</h3>
+<p>You need to have <a href="https://nodejs.org/">Node.js</a> and npm installed on your machine.</p>
+<h2>Deployment</h2>
+<p>The website is automatically deployed to GitHub Pages whenever changes are pushed to the <code>main</code> branch. The workflow is defined in <code>.github/workflows/deploy-pages.yml</code>.</p>
 <p><a href="https://www.dawidsblog.com/posts/tutorial_11ty_github_pages/">This very nice post</a> explains how to deploy 11ty projects to GitHub pages.</p>
