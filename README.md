@@ -43,10 +43,6 @@ The main directories are:
     └── style.css
 ```
 
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
 ### Prerequisites
 
 You need to have [Node.js](https://nodejs.org/) and npm installed on your machine.
